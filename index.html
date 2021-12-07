@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>모바일 웹</title>
+    /*<meta name="viewport" content="width=device-width">*/
+
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script>
+        $(function () {
+            $("label").click(function () {
+                $("#toggle_gnb").slideToggle();
+            });
+        });
+    </script>
+ </head>
+<body>
+    <input type="checkbox" id="toggle" checked="checked" />
+    <header id="main_header">
+        <a href="#" class="btn_main">메인</a>
+        <h1>Mobile</h1>
+        <label for="toggle">toggle</label>
+    </header>
+    <div id="toggle_gnb">
+        <ul>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+        </ul>
+    </div>
+    <nav id="top_gnb">
+        <ul>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+        </ul>
+    </nav>
+    <nav id="bottom_gnb">
+        <ul>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+            <li><a href="#">버튼</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Main Page</h1>
+        <article>
+            <header id="content_header">
+                <h1>Lorem ipsum</h1>
+                <time datetime="2013-10-10T12:00">2013-10-10 - Birthday</time>
+            </header>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </article>
+    </section>
+    <footer id="main_footer">
+        <h3>HTML5 + CSS3 Basic</h3>
+        <address>Website Layout Basic</address>
+    </footer>
+</body>
+</html>

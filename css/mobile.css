@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+
+/* 초기화 */
+body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+input[type=checkbox] { display: none; }
+input[type=checkbox]:checked ~ #toggle_gnb { display: none; }
+
+/* 헤더 */
+#main_header { height: 45px; background: url(../header_background.png) repeat-x; }
+#main_header a { position: absolute; top: 6px; left: 6px; display: block;
+				 width: 62px; height: 32px; text-indent: -9999px;
+				 background: url(../sprites.png) no-repeat;
+}
+#main_header h1 { text-align: center; line-height: 45px;
+				  color: #fff; font-family: 'Berlin Sans FB';  }
+#main_header label { position: absolute; top: 6px; right: 6px; display: block;
+					 width: 32px; height: 32px; text-indent: -9999px;
+					 background: url(../sprites.png) no-repeat -62px 0;
+					 cursor: pointer;
+}
+
+/* toggle_gnb */
+#toggle_gnb { padding: 20px 18px; background: #8f8f8f;  }
+#toggle_gnb ul { overflow: hidden; background: #fff; }
+#toggle_gnb li { width: 60px; padding: 20px; float: left; }
+
+/* top_gnb */
+#top_gnb { border-bottom: 2px solid #000; }
+#top_gnb ul  { overflow: hidden; }
+#top_gnb li { width: 25%; height: 35px; float: left; }
+#top_gnb li a { display: block; 
+				text-align: center; line-height: 35px; 
+				background: #820e0e; color: #fff;
+}
+/* bottom_gnb */
+#bottom_gnb { border-bottom: 1px solid #000; }
+#bottom_gnb ul  { overflow: hidden; }
+#bottom_gnb li { width: 20%; height: 35px; float: left; }
+#bottom_gnb li a { position: relative; display: block; 
+				text-align: center; line-height: 35px;
+				color: #000;
+}
+#bottom_gnb li a:hover { font-weight: bold; background: #cacaca;
+}
+/* bottom_gnb li에 경계선 넣기 */
+#bottom_gnb a::before { content: " "; 
+						display: block;
+						position: absolute; 
+						top: 10px; left: -1px;
+						height: 15px; border-left: 1px solid #000;
+						}
+/* 섹션 */
+section > h1 { position: absolute; left: -9999px; }
+#content_header { padding: 30px 0 0 20px; }
+section p { line-height:	30px; }
+
+/* 푸터 */
+#main_footer { padding: 20px 0; 
+			   border-top: 2px solid #000; 
+			   text-align: center;
+}
